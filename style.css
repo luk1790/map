@@ -1,0 +1,17 @@
+.mapImage{
+    position: absolute;
+    /* display: none */
+}
+
+img{
+    width: 600px;
+    position: absolute;
+    left: 0;
+}
+
+
+.mainMap img{
+    position: relative;
+    left: 0;
+    width: 600px;
+}
