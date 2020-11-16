@@ -3,11 +3,12 @@ console.log("yyy");
 function createMap() {
   let htmlElement = document.createElement("div");
 
-  let createImg = ({ urlImage, map, display, id }) => {
+  let createImg = ({ urlImage, map, display, id, className }) => {
     let img = document.createElement("img");
     img.src = urlImage;
     img.useMap = map;
     img.id = id;
+    img.className = className;
     img.style = display ? "display:inline" : "display: none;";
 
     return img;
@@ -69,6 +70,26 @@ function createMap() {
     coords: "289,243,283,238,276,245,255,230,200,205,204,192,193,183,195,164,200,155,194,141,201,125,217,126,229,113,295,127,304,148,324,165,314,185,302,238,",
     href: "javascript:test('mapaKujawskie')"
   }));
+  map.appendChild(createArea({
+    coords: "164,29,249,6,264,47,298,52,298,82,314,92,312,101,303,98,293,118,278,118,278,111,233,100,194,124,176,124,169,118,165,30,",
+    href: "javascript:test('mapaPomorskie')"
+  }));
+  map.appendChild(createArea({
+    coords: "530,252,560,265,557,288,557,319,598,402,594,423,578,424,566,439,551,430,516,438,501,431,508,422,486,405,486,396,467,393,460,326,447,319,466,299,462,283,509,272,532,250,",
+    href: "javascript:test('mapaLubelskie')"
+  }));
+  map.appendChild(createArea({
+    coords: "333,171,366,171,374,161,434,139,437,161,457,187,470,195,482,207,482,222,495,239,523,249,517,263,503,260,460,274,459,289,458,303,451,308,443,308,444,322,452,327,453,369,435,371,415,363,379,344,383,326,375,315,390,315,390,294,378,286,367,284,364,272,351,256,342,247,326,251,311,242,330,170,",
+    href: "javascript:test('mapaMazowieckie')"
+  }));
+  map.appendChild(createArea({
+    coords: "505,42,537,64,568,159,573,204,549,219,533,242,503,237,490,221,488,201,474,189,463,188,458,170,444,165,441,139,501,96,504,85,495,68,489,62,505,49,",
+    href: "javascript:test('mapaPodlaskie')"
+  }));
+  map.appendChild(createArea({
+    coords: "334,43,420,55,499,47,483,59,499,86,455,128,372,155,365,164,331,163,326,147,297,123,307,104,318,107,319,91,312,84,302,78,306,68,305,61,332,46,",
+    href: "javascript:test('mapaWarminsko')"
+  }));
 
   htmlElement.appendChild(
     createImg({
@@ -83,6 +104,7 @@ function createMap() {
       urlImage: "./maps/mapaZachodnio.png",
       map: "#workmap",
       id: "zachodniopomo",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -90,6 +112,7 @@ function createMap() {
       urlImage: "./maps/mapaDolnoslaskie.png",
       map: "#workmap",
       id: "dolnoMap",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -97,6 +120,7 @@ function createMap() {
       urlImage: "./maps/mapaLubuskie.png",
       map: "#workmap",
       id: "lubuskieMap",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -104,6 +128,7 @@ function createMap() {
       urlImage: "./maps/mapaWielkopolskie.png",
       map: "#workmap",
       id: "mapaWielkopolskie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -111,6 +136,7 @@ function createMap() {
       urlImage: "./maps/mapaOpolskie.png",
       map: "#workmap",
       id: "mapaOpolskie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -118,6 +144,7 @@ function createMap() {
       urlImage: "./maps/mapaSlaskie.png",
       map: "#workmap",
       id: "mapaSlaskie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -125,6 +152,7 @@ function createMap() {
       urlImage: "./maps/mapaMalopolskie.png",
       map: "#workmap",
       id: "mapaMalopolskie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -132,6 +160,7 @@ function createMap() {
       urlImage: "./maps/mapaPodkarpackie.png",
       map: "#workmap",
       id: "mapaPodkarpackie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -139,6 +168,7 @@ function createMap() {
       urlImage: "./maps/mapaSwietokrzyskie.png",
       map: "#workmap",
       id: "mapaSwietokrzyskie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -146,6 +176,7 @@ function createMap() {
       urlImage: "./maps/mapaLodzkie.png",
       map: "#workmap",
       id: "mapaLodzkie",
+      className: "country"
     })
   );
   htmlElement.appendChild(
@@ -153,8 +184,51 @@ function createMap() {
       urlImage: "./maps/mapaKujawskie.png",
       map: "#workmap",
       id: "mapaKujawskie",
+      className: "country"
     })
   );
+  htmlElement.appendChild(
+    createImg({
+      urlImage: "./maps/mapaPomorskie.png",
+      map: "#workmap",
+      id: "mapaPomorskie",
+      className: "country"
+    })
+  );
+  htmlElement.appendChild(
+    createImg({
+      urlImage: "./maps/mapaLubelskie.png",
+      map: "#workmap",
+      id: "mapaLubelskie",
+      className: "country"
+    })
+  );
+  htmlElement.appendChild(
+    createImg({
+      urlImage: "./maps/mapaMazowieckie.png",
+      map: "#workmap",
+      id: "mapaMazowieckie",
+      className: "country"
+    })
+  );
+  htmlElement.appendChild(
+    createImg({
+      urlImage: "./maps/mapaPodlaskie.png",
+      map: "#workmap",
+      id: "mapaPodlaskie",
+      className: "country"
+    })
+  );
+  htmlElement.appendChild(
+    createImg({
+      urlImage: "./maps/mapaWarminsko.png",
+      map: "#workmap",
+      id: "mapaWarminsko",
+      className: "country"
+    })
+  );
+
+
   htmlElement.appendChild(map);
   return htmlElement;
 }
@@ -162,13 +236,13 @@ function createMap() {
 document.getElementById("displayMap").appendChild(createMap());
 
 // do tworzenia coordynat
-let coords = '';
-document.getElementById('mainMap').addEventListener('click',(e)=>{
-  // console.log(e)
-  coords += `${e.offsetX},${e.offsetY},`;
-  console.log('coords',coords);
+// let coords = '';
+// document.getElementById('mainMap').addEventListener('click',(e)=>{
+//   // console.log(e)
+//   coords += `${e.offsetX},${e.offsetY},`;
+//   console.log('coords',coords);
 
-})
+// })
 function test(image) {
   console.log("test");
 
