@@ -3,17 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "scripts": {
-    "deploy": "gh-pages -d build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luk1790/map.git"
   },
   "author": "Lukasz Rak",
   "license": "ISC",
-  "homepage": "https://github.com/luk1790/map/",
-  "dependencies": {
-    "gh-pages": "^2.2.0"
-  }
+  "homepage": "https://github.com/luk1790/map/"
 }
