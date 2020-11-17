@@ -1,22 +1,36 @@
-.mapImage{
-    position: absolute;
-    /* display: none */
+.mapImage {
+  position: absolute;
+  margin-left: 19%;
+  /* display: none */
 }
 
-.country{ 
-position: absolute;
+.mapImage .country {
+  position: absolute;
 }
 
-img{
-    width: 600px;
-    /* position: absolute; */
+.mapImage img {
+  width: 600px;
+  /* position: absolute; */
+  position: relative;
+  left: 0;
+}
+
+.mainMap img {
+  position: relative;
+  left: 0;
+  width: 600px;
+}
+
+/* .mapButtonsContainer{
+    width: 400px;
+    height: 400px;
+}
+.mapButtons{
+    width: 100%;
+}
+
+.buttonsCountry{
     position: relative;
-    left: 0;
-}
-
-
-.mainMap img{
-    position: relative;
-    left: 0;
-    width: 600px;
-}
+    top: -80%;
+    left: 11%;
+} */

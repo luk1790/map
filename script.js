@@ -1,4 +1,3 @@
-console.log("yyy");
 
 function createMap() {
   let htmlElement = document.createElement("div");
@@ -235,14 +234,6 @@ function createMap() {
 
 document.getElementById("displayMap").appendChild(createMap());
 
-// do tworzenia coordynat
-// let coords = '';
-// document.getElementById('mainMap').addEventListener('click',(e)=>{
-//   // console.log(e)
-//   coords += `${e.offsetX},${e.offsetY},`;
-//   console.log('coords',coords);
-
-// })
 function test(image) {
   console.log("test");
 
