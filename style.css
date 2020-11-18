@@ -1,11 +1,21 @@
-.mapImage {
-  position: absolute;
-  margin-left: 19%;
-  /* display: none */
+.title{
+  text-align: center;
 }
+
+.mapImage {
+  /* position: absolute;
+  margin-left: 19%; */
+  /* display: none */
+  display: flex;
+}
+
+/* .mapImage div{
+  margin-left: 20%;
+} */
 
 .mapImage .country {
   position: absolute;
+  left: 9px;
 }
 
 .mapImage img {
@@ -20,6 +30,7 @@
   left: 0;
   width: 600px;
 }
+
 
 /* .mapButtonsContainer{
     width: 400px;
