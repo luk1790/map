@@ -26,7 +26,7 @@ function createMap() {
     createArea({
       coords:
         "17,81,70,67,116,57,130,50,148,29,159,59,163,116,155,128,142,130,145,152,122,168,105,161,25,203,11,178,22,161,18,84",
-      href: "javascript:test('zachodniopomo')",
+      href: "javascript:test('mapaZachodnio')",
     })
   );
 
@@ -34,14 +34,14 @@ function createMap() {
     createArea({
       coords:
         "54,335,134,300,201,350,150,447,138,452,120,430,133,416,115,397,50,358,50,340,",
-      href: "javascript:test('dolnoMap')",
+      href: "javascript:test('mapaDolnoslaskie')",
     })
   );
   map.appendChild(
     createArea({
       coords:
         "28,210,38,211,51,192,75,185,76,180,84,178,108,168,108,184,102,197,95,229,98,249,109,279,132,291,125,301,105,287,83,318,70,315,63,324,53,319,47,329,41,315,33,314,37,304,32,287,36,253,26,237,34,225,32,215",
-      href: "javascript:test('lubuskieMap')",
+      href: "javascript:test('mapaLubuskie')",
     })
   );
   map.appendChild(
@@ -148,7 +148,7 @@ function createMap() {
     createImg({
       urlImage: "./maps/mapaZachodnio.png",
       map: "#workmap",
-      id: "zachodniopomo",
+      id: "mapaZachodnio",
       className: "country",
     })
   );
@@ -156,7 +156,7 @@ function createMap() {
     createImg({
       urlImage: "./maps/mapaDolnoslaskie.png",
       map: "#workmap",
-      id: "dolnoMap",
+      id: "mapaDolnoslaskie",
       className: "country",
     })
   );
@@ -164,7 +164,7 @@ function createMap() {
     createImg({
       urlImage: "./maps/mapaLubuskie.png",
       map: "#workmap",
-      id: "lubuskieMap",
+      id: "mapaLubuskie",
       className: "country",
     })
   );
