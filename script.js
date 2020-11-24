@@ -281,17 +281,36 @@ document.getElementById("displayMap").appendChild(createMap());
 
 let checkCountry = [];
 function test(image) {
-  console.log("test");
+  const nameCountry = {
+    mapaZachodnio: "Zachodnio pomorskie",
+    mapaDolnoslaskie: "Dolnośląskie",
+    mapaLubuskie: "Lubuskie",
+    mapaWielkopolskie: "Wielkopolskie",
+    mapaOpolskie: "Opolskie",
+    mapaSlaskie: "Śląskie",
+    mapaMalopolskie: "Małopolskie",
+    mapaPodkarpackie: "Podkarpackie",
+    mapaSwietokrzyskie: "Świętokrzyskie",
+    mapaLodzkie: "Łódzkie",
+    mapaKujawskie: "Kujawsko-Pomorskie",
+    mapaPomorskie: "Pomorskie",
+    mapaLubelskie: "Lubelskie",
+    mapaMazowieckie: "Mazowieckie",
+    mapaPodlaskie: "Podlaskie",
+    mapaWarminsko: "Warmińsko-Mazurskie",
+  };
 
   let img2 = document.getElementById(image);
   console.log(img2.style.display);
   img2.style.display = img2.style.display === "none" ? "inline" : "none";
-  console.log(document.getElementById("countryName").value);
+  // console.log(document.getElementById("countryName").value);
 
   if (checkCountry.findIndex((elem) => elem === image) < 0) {
     checkCountry.push(image);
   } else {
     checkCountry = checkCountry.filter((elem) => elem !== image);
   }
-  document.getElementById("countryName").innerText = checkCountry.join(" ,");
+  document.getElementById("countryName").innerText = checkCountry
+    .map((countryName) => nameCountry[countryName])
+    .join(" ,");
 }
